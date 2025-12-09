@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-white text-gray-900;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold;
+  }
+}
+
+@layer utilities {
+  .prose-custom {
+    @apply max-w-none;
+  }
+  
+  .prose-custom h1 {
+    @apply text-4xl font-bold mt-8 mb-4 text-gray-900;
+  }
+  
+  .prose-custom h2 {
+    @apply text-3xl font-bold mt-6 mb-3 text-gray-800;
+  }
+  
+  .prose-custom h3 {
+    @apply text-2xl font-semibold mt-4 mb-2 text-gray-800;
+  }
+  
+  .prose-custom p {
+    @apply text-lg leading-relaxed mb-4 text-gray-700;
+  }
+  
+  .prose-custom ul {
+    @apply list-disc list-inside mb-4 space-y-2;
+  }
+  
+  .prose-custom ol {
+    @apply list-decimal list-inside mb-4 space-y-2;
+  }
+  
+  .prose-custom strong {
+    @apply font-bold text-gray-900;
+  }
+  
+  .prose-custom a {
+    @apply text-primary hover:text-primary-dark underline;
+  }
+  
+  .prose-custom blockquote {
+    @apply border-l-4 border-primary pl-4 italic my-4 text-gray-700;
+  }
+}
